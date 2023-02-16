@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: clamp(1rem,0.75rem+1.2vw,1.5rem);
+
+}
+
+body {
+  background-color:#F0F0F0;
+  width: 80%;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 5px;
+
+}
+
+.room--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center ;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .room--container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+

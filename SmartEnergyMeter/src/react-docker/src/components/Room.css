@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.room {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(97, 144, 232, 0.41) 0%, rgba(97, 144, 232, 0.41) 0.01%, rgba(167, 191, 232, 0.41) 100%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.room--header {
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.room--header > h1 {
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 110%;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.room--header > h3 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 110%;
+    color: #222222;
+}
+
+.room--sensors {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+
+   
+}
+
+
+.room--sensors--temperature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+
+}
+
+.room--sensors--icon {
+    max-inline-size:37%;
+    block-size: auto;
+    object-fit: contain;
+    margin-left: -10px;
+    
+}
+
+.room--sensors--airquality {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+
+}
+
+.room--sensors--text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: #000000;
+}
+
+.room--actuators {
+    display: flex;
+    flex-direction: column;
+}
+
+.room--actuators--hvac {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.room--actuators--hvac--icon {
+    max-inline-size:39%;
+    block-size: auto;
+    object-fit: contain;
+    margin-left: -10px;
+}
+
+.room--actuators--hvac--status {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.room--actuators-hvac-status-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 3px;
+
+}
+
+.room--actuators-hvac-status-info > img {
+    max-inline-size:14%;
+    block-size: auto;
+    object-fit: contain;
+    margin-left: 8px;
+}
+
+.room--actuators-hvac-status-info > p {
+    text-align: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: #000000;
+}
+
+.room--index {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 110%;
+    color: #222222;
+}
